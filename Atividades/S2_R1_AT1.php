@@ -12,7 +12,7 @@
         echo"<p>Informações da Empresa...</p>";
         // Em php, sempre colocar ";" no final da linha
         echo"<p>Para compras, ligue: (19) 99999-8888</p>";
-        echo"<p>Contate a empresa para mais dúvidas!</p>";
+        echo"<p>Contate a empresa em caso de dúvidas!</p>";
 
         // Para rodar o php colocamos no terminal: php -S localhost:(porta)
     ?>
