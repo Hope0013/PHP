@@ -6,6 +6,7 @@
     <title>Comparando Empresas</title>
     <style>
        body {
+        font-family:Arial, Helvetica, sans-serif;
         line-height: 1.6;
         padding: 50px;
         text-align: center;
@@ -15,6 +16,7 @@
         border-bottom: 2px solid #ddd;
         padding-bottom: 10px;
         margin-bottom: 30px;
+        color: darkblue;
     }
 
     p {
@@ -49,9 +51,10 @@
         // Comparação de faturamento e funcionarios
         $maisFuncionarios = $funcionarios1 > $funcionarios2;
         $maiorFaturamento = $faturamento1 > $faturamento2;
-
+        
         echo "<p>A Empresa $empresa1 tem $tempoEmpresa1 anos</p>";
         echo "<p>A Empresa $empresa2 tem $tempoEmpresa2 anos</p>";
+        echo "<br>";
         // Operador ternario, funciona como um if/else. Caso seja "true", a resposta é o que vem depois do "?" e caso false, é o que vem depois do ":"
         echo "<p>A Empresa ABC tem: </p>" .($maisFuncionarios?"Mais funcionários que sua concorrente." : "Menos funcionários que sua concorrente.");
         echo "<p>A Empresa ABC fatura: </p>" .($maiorFaturamento?"Mais que sua concorrente." : "Menos que sua concorrente.");
