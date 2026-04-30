@@ -10,14 +10,16 @@
         }
         table{
             margin-left: auto;
+            border-collapse: collapse;
             margin-right: auto;
             width: 80%;
         }
         
         th, td{
-        padding: 5px;
-        text-align: center;
-        font-size: 20px;
+            padding: 5px;
+            border: solid 1px black;
+            text-align: center;
+            font-size: 20px;
         }
         th{
             background-color: mediumpurple;
@@ -38,7 +40,7 @@
         ];
     ?>
     <!-- tabela com as informações ficarem mais organizadas -->
-    <table border="2px solid">
+    <table>
         <thead>
             <tr>
                 <th>Nome</th>
