@@ -12,6 +12,10 @@
             color: darkblue;
             padding: 10px;
             border-bottom: 1px solid black;
+            font-size: 40px;
+        }
+        h2{
+            font-size: 30px;
         }
     </style>
 </head>
