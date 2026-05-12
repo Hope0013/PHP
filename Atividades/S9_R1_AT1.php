@@ -24,7 +24,7 @@
             width: 300px;
             background-color: rgba(102, 163, 255, 0.66);
             border-radius: 30px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.30);
         }
         /* posicionando as informações em colunas e dando espaço */
         form{
@@ -64,7 +64,7 @@
 
         .exibir-dados{
             margin: 10px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.30);
 
         }
         .label-info{
