@@ -1,0 +1,75 @@
+body {
+    /* Gradiente mais suave e moderno em tons de verde/menta */
+    background: linear-gradient(135deg, #f2e9e0, #dfc6b2);
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #e95804cc;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    letter-spacing: 1px;
+}
+
+.container-numeros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Garante que quebre linha em telas pequenas */
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.caixinha {
+    background: #ffffff;
+    color: #e95804cc;
+    width: 60px; /* Aumentei um pouco para ficar mais imponente */
+    height: 60px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 30%; /* Transformado em círculo, estilo globo de sorteio */
+    font-weight: bold;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 3px solid #e95804cc;
+    /* Pequena animação ao aparecer */
+    animation: bounceIn 0.5s ease-out;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    80% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
+        
+.button {
+    background-color: #e95804cc; /* Verde floresta */
+    color: white;
+    font-size: 16px;
+    padding: 15px 40px;
+    font-weight: bold;
+    border-radius: 50px; /* Botão arredondado estilo moderno */
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #be5600;
+    transform: translateY(-2px); /* Efeito de levante */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.button:active {
+    transform: translateY(0);
+}
