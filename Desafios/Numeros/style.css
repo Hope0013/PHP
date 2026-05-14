@@ -1,19 +1,17 @@
-
-body{
-    background: linear-gradient(to top, #ffd7d7, #ffa6a6 );
+body {
+    background: linear-gradient(to top, #ffd7d7, #ffa6a6);
     background-attachment: fixed;
     margin: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column; 
     align-items: center; 
     justify-content: center;
     min-height: 100vh;
-    margin: 0;
 }
 
-div{
-    padding: 10px;
+.container {
+    padding: 20px; /* Aumentei um pouco para não sufocar o conteúdo */
     width: 400px;
     background-color: rgba(255, 158, 158, 0.66);
     border-radius: 30px;
@@ -21,12 +19,20 @@ div{
     margin-bottom: 10px;
 }
 
-h1{
+h1 {
     text-align: center;
-    margin: 30px;
+    margin: 20px 0;
+    font-size: 22px;
+    color: #333;
 }
 
-form{
+h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
     display: flex;
     flex-direction: column;
     margin: 15px;
@@ -35,25 +41,45 @@ form{
 label {
     margin-top: 15px;
     font-size: 15px;
+    font-weight: bold;
 }
         
 input {
     margin: 10px 0;
-    padding: 5px;
+    padding: 10px;
     border: 0px;
     border-radius: 5px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.button{
+/* Estilo específico para a barra de range para não ficar com fundo branco */
+input[type="range"] {
+    background: transparent;
+    cursor: pointer;
+}
+
+.button {
     background-color: #f54c4cde;
+    color: white;
     font-weight: bold;
     border-radius: 10px;
     border: 0px;
-    margin-top: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    margin-top: 20px;
+    padding: 12px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: background 0.3s;
 }
 
-.button:hover{
+.button:hover {
     background-color: #ce0000;
+}
+
+.resultado-texto {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #222;
 }
