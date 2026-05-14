@@ -10,7 +10,9 @@
     <h1>. ₊ ⊹ . ₊˖ . ₊DESCOBRINDO OS NÚMEROS. ₊ ⊹ . ₊˖ . ₊</h1>
     
     <div>
+        <!-- formulario para o usuario digitar um numero -->
         <form method="POST" action="processa.php">
+            <!-- o action leva a pagina processsa.php -->
             <label>Digite um número: </label>
             <input type="number" name="num" id="num" placeholder="Digite aqui...">
             <input class="button" type="submit" value="Enviar">
