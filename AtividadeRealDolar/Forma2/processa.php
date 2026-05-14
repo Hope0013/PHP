@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-    if ($_SERVER)
+    // if ($_SERVER)
         $inicio = date("m-d-Y", strtotime("-7 days"));
         $fim = date("m-d-Y");
 
@@ -29,7 +29,6 @@
         echo "<p>Valor em Reais (R$): ". numfmt_format_currency($padrao_brasil, $valor, "BRL") . "</p>";
         echo "<p>Valor em Dolares (USS$): ". numfmt_format_currency($padrao_eua, $result, "USD") . "</p>";
         echo "Cotação do Dólar: $dados"; 
-    }
 
     ?>
 </body>
